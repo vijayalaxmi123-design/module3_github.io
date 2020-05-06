@@ -7,6 +7,10 @@
   body{
     background-color: yellow;
   }
+  
+  .nav.navbar-nav.navbar-right{
+    display: none;
+  }
   #c1, #c2, #c3 {
      border: 1px solid black;
       width: 100%;
@@ -18,7 +22,6 @@
       display: inline-block;
   }
   #chicken,#beaf,#sushi{
-    align-items: center;
     height: 30px;
     text-align: center;
     font-weight: bold;
@@ -26,7 +29,11 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-#c1, #c2, #c3 {
+
+  .nav.navbar-nav.navbar-right{
+    display: none;
+  }
+  #c1, #c2, #c3 {
      border: 1px solid black;
       width: 100%;
       margin-bottom: 8px;
@@ -37,7 +44,6 @@
       display: inline-block;
   }
   #chicken,#beaf,#sushi{
-    align-items: center;
     height: 30px;
     text-align: center;
     font-weight: bold;
@@ -46,6 +52,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  
+  .nav.navbar-nav.navbar-right{
+    display: none;
+  }
   #c1, #c2, #c3 {
       border: 1px solid black;
       width: 100%;
@@ -57,7 +67,6 @@
       display: inline-block;
   }
   #chicken,#beaf,#sushi{
-    align-items: center;
     height: 30px;
     text-align: center;
     font-weight: bold;
@@ -67,7 +76,7 @@
 /*** media query mobiles***/
 @media (max-width: 767px) {
   #c1, #c2, #c3 {
-   border: 1px solid black;
+     border: 1px solid black;
      width: 100%;
      height: auto;
      margin-bottom: 10px;
@@ -83,12 +92,28 @@
   body{
     background-color: black;
   }
+
+.navbar-toggle{
+    border:none !important;
+  }
+  .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+ .navbar .navbar-collapse {
+        text-align: center;
+   }
+  .nav.navbar-nav.navbar-right {
+  list-style: none;
+  border: 1px solid #84B6D0;
+  width: 100%;
+}
+#list{
+  border: 1px solid #84B6D0;
+  width: 100%;
 }
 
-h1{
-  text-align: center;
-  font-family: "Comic Sans MS", Times, serif;
-  font-style: bold;
 }
 
 #pargraphText{
@@ -99,49 +124,31 @@ h1{
 #container {
   clear: both;
 }
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+#contentContainer{
+  margin: 15px;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
+.navbar-default{
+    background-color: #862f38;
+}
+.navbar.navbar-default{
+  background-color: pink;
+}
+.navbar-brand a{
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-  border: 0;
-  border-radius: 0;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
   font-family: "Comic Sans MS", Times, serif;
   font-style: bold;
-  font-size: 30px;
-}
-
-#header-nav {
-  border: 0;
-  border-radius: 0;
-  background-color: red;
-  height: 50px;
-}
-
-#navbar-header {
+  color: blue;
 
 }
-
+.navbar-header a.navbar-brand {
+  text-align: center;
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", Times, serif;
+}
+h1{
+  text-align: center;
+  font-family: "Comic Sans MS", Times, serif;
+  font-style: bold;
+}

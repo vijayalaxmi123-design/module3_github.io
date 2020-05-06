@@ -12,12 +12,38 @@
 
 	<link rel="stylesheet" type="text/css" media="(max-width: 767px)" href="CSS/styles.css"/>
 
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<div id="container">	
-<div class="topnav">
-  <a class="active" href="category.html">Food, LLC</a></div>
-	<h1>Our Menu</h1>
+    <nav class="navbar navbar-default">
+         <div class="container">
+                 <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                 <span class="sr-only">Toggle navigation</span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                         </button>
+                         <a class="navbar-brand" href="index.html">Food, LLC</a>
+                 </div>
+
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                         <ul class="nav navbar-nav navbar-right">
+                                 <li id="list"><a href="#c1">Chicken</a></li>
+                                 <li id="list"><a href="#c2">Beaf</a></li>
+                                 <li id="list"><a href="#c3">Sushi</a></li>    
+                                 
+                         </ul>
+                 </div>
+         </div>
+ </nav>
+<div id="contentContainer">
+    <h1>Our Menu</h1>
 	
     <div id="c1">
     	<div id="chicken">Chicken</div>
@@ -33,9 +59,9 @@
     		<a class="c1"></a>
     		<a href="#top">Back to top</a>
     		</p>
-
     	</div>
     </div>
+
     <div id="c2">
     	<div id="beaf">Beaf</div>
     	<div>
@@ -52,6 +78,7 @@
     		</p>
     	</div>
     </div>
+
     <div id="c3">
     	<div id="sushi">Sushi</div>
     	<div>
@@ -67,7 +94,7 @@
     		<a class="c1"></a>
     		<a href="#top">Back to top</a>
     		</p>
-    	</div>
+        </div>
     </div>
 </div>
 </body>
